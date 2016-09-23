@@ -115,6 +115,12 @@ textarea {  resize: vertical }
 * ==========================================================================
    ==================================================
    ================================================== */
+.college {
+    display: block;
+    margin: 0 auto;
+}
+
+
 @font-face {
   font-family: 'BeonMedium';
   src: url('../fonts/beon-webfont.eot');
@@ -178,7 +184,7 @@ ul {  list-style: none }
 a {  text-decoration: none }
 .padding-big {  padding: 60px 0 }
 p {
-  color: #787878;
+  color: #000;
   font-family: Open_sanslight;
 }
 #container {
