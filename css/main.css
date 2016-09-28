@@ -573,6 +573,15 @@ a:hover {  text-decoration: underline }
   border-radius: 50%;
   overflow: hidden;
 }
+
+.sponsors{
+  display: table;
+  height: auto;
+  margin: 0 auto;
+  width: auto;
+  
+  overflow: hidden;
+}
 /* * ==========================================================================
         3.4.Contact Form
 * ==========================================================================
