@@ -103,15 +103,15 @@ h2 {
 
 .navbar-brand {
   background-color: #1B7B98;
-  height: 90px;
+  height: 300px;
   margin-bottom: 20px;
   position: relative;
-  width: 297px;
+  width: 300px;
 }
 
 .navbar-brand img {
   position: absolute;
-  top: -35px;
+  top: -1px;
 }
 
 .navbar-right {
@@ -658,7 +658,7 @@ h2 {
 
 .contact-section {
   background-color: #f7ab24;
-  /*background-image: url("../images/contact-bg.jpg");*/
+  /*background-image: url("../images/logo.png");*/
   background-position:60% 0;
   background-size:contain;
   background-repeat:no-repeat;  
