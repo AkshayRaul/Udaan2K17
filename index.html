@@ -227,44 +227,44 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/temp.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="70%" class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
 								</ul>
 							</div>
 							<div class="item">
 								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="90%" class="img-responsive" src="images/sponsor/sponsor7.png" alt=""></a></li>
+									<li><a href="#"><img height="55%" width="90%" class="img-responsive" src="images/sponsor/sponsor8.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor9.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor10.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor11.png" alt=""></a></li>
+									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor12.png" alt=""></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>				
 			</div>
-			<div class="light">
-				<!--<img class="img-responsive" src="images/light.png" alt=""> -->
+			<div class="ironman" >
+				<img class="img-responsive" height="100%" width="60%" src="images/Iron-Man.png" alt=""> 
 			</div>
 		</div>
 	</section><!--/#sponsor-->
 
-	<section id="contact">
-		<div id="map">
+	<section id="contact" class="map1">
+		<div class="map">
 			<div id="gmap-wrap">
-	 			 <div style="width:100%;max-width:100%;overflow:hidden;height:440px;color:red;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sardar+Patel+Institute+of+Technology,+Munshi+Nagar,+Andheri+(West),+Mumbai+400+058&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embedded-map-html" rel="nofollow" href="http://www.interserver-coupons.com" id="get-map-data">interserver coupons</a><style>#gmap_display .text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div><script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=9648d556-c798-a6bc-9cf6-525d47de33ce&c=embedded-map-html&u=1474643802" defer="defer" async="async"></script>				
+	 			 <div style="width:100%;max-width:100%;overflow:hidden;height:440px;color:red;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sardar+Patel+Institute+of+Technology,+Munshi+Nagar,+Andheri+(West),+Mumbai+400+058&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div>				
 	 			</div>	 			
 	    	</div>
 		</div><!--/#map-->
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="images/ear-piece.png" alt=""> 
+				<img height="30%" width="30%" class="img-responsive" src="images/superman.png" alt=""> 
 			</div>
 			<div class="container">
 				<div class="row">
@@ -306,7 +306,28 @@
         </div>
     </footer>
     <!--/#footer-->
-  
+  	<script type="text/javascript">
+  	// Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map1').on('click', onMapClickHandler);
+  	</script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
