@@ -662,6 +662,7 @@ GMaps.prototype.addMarkers = function(array) {
   for (var i = 0, marker; marker=array[i]; i++) {
     this.addMarker(marker);
   }
+
   return this.markers;
 };
 

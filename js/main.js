@@ -1,85 +1,150 @@
-// Toggle Script
-(function() {
-	var container = document.getElementById( 'container' ),
-		trigger = container.querySelector( 'button.trigger' );
+jQuery(function($) {'use strict',
+	
+	//Countdown js
+	 $("#countdown").countdown({
+			date: "10 july 2017 12:00:00",
+			format: "on"
+		},
+		
+		function() {
+			// callback function
+		});
+	
 
-	function toggleContent() {
-		if( classie.has( container, 'container-open' ) ) {
-			classie.remove( container, 'container-open' );
-			classie.remove( trigger, 'trigger-active' );
-			window.addEventListener( 'scroll', noscroll );
-		}
-		else {
-			classie.add( container, 'container-open' );
-			classie.add( trigger, 'trigger-active' );
-			window.removeEventListener( 'scroll', noscroll );
+	
+	//Scroll Menu
+
+	function menuToggle()
+	{
+		var windowWidth = $(window).width();
+
+		if(windowWidth > 767 ){
+			$(window).on('scroll', function(){
+				if( $(window).scrollTop()>405 ){
+					$('.main-nav').addClass('fixed-menu animated slideInDown');
+				} else {
+					$('.main-nav').removeClass('fixed-menu animated slideInDown');
+				}
+			});
+		}else{
+			
+			$('.main-nav').addClass('fixed-menu animated slideInDown');
+				
 		}
 	}
 
-	function noscroll() {
-		window.scrollTo( 0, 0 );
-	}
+	menuToggle();
+	
+	
+	// Carousel Auto Slide Off
+	$('#event-carousel, #twitter-feed, #sponsor-carousel ').carousel({
+		interval: false
+	});
 
-	// reset scrolling position
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
 
-	// disable scrolling
-	window.addEventListener( 'scroll', noscroll );
+	// Contact form validation
+	var form = $('.contact-form');
+	form.submit(function () {'use strict',
+		$this = $(this);
+		$.post($(this).attr('action'), function(data) {
+			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+		},'json');
+		return false;
+	});
 
-	trigger.addEventListener( 'click', toggleContent );
+	$( window ).resize(function() {
+		menuToggle();
+	});
 
-	// For Demo purposes only (prevent jump on click)
-	[].slice.call( document.querySelectorAll('.content-wrapper a') ).forEach( function(el) { el.onclick = function() { return false; } } );
-})();
+	$('.main-nav ul').onePageNav({
+		currentClass: 'active',
+	    changeHash: false,
+	    scrollSpeed: 900,
+	    scrollOffset: 0,
+	    scrollThreshold: 0.3,
+	    filter: ':not(.no-scroll)'
+	});
 
-// Background Image Sideshow
+});
+
+
+// Google Map Customization
 (function(){
-    'use strict';
 
-    jQuery('#maximage').maximage();
+	var map;
 
-})();
+	map = new GMaps({
+		el: '#gmap',
+		lat: 43.04446,
+		lng: -76.130791,
+		scrollwheel:false,
+		zoom: 16,
+		zoomControl : false,
+		panControl : false,
+		streetViewControl : false,
+		mapTypeControl: false,
+		overviewMapControl: false,
+		clickable: false
+	});
 
-  // JavaScript Document
-
-
-// screen loader
-$(window).load(function() {
-    "use strict";
-    $('.screen-loader').fadeOut('slow');
-});
-
-// preload
-$(document).ready(function() {
-    "use strict";
-    $('#preload').css({
-        display: 'table'
-    });
-});
-
-// preload function
-$(window).load(preLoader);
-"use strict";
-function preLoader() {
-    setTimeout(function() {
-        $('#preload').delay(1000).fadeOut(1500);
-    });
-};
-
-// niceScroll
-$(document).ready(function() {
-    "use strict";
-    $("body").niceScroll({
-        cursorcolor: "#fff",
-        cursorwidth: "5px",
-        cursorborder: "1px solid #fff",
-        cursorborderradius: "0px",
-        zindex: "9999",
-        scrollspeed: "60",
-        mousescrollstep: "40"
-    });
-});
+	var image = 'images/map-icon.png';
+	map.addMarker({
+		lat: 43.04446,
+		lng: -76.130791,
+		icon: image,
+		animation: google.maps.Animation.DROP,
+		verticalAlign: 'bottom',
+		horizontalAlign: 'center',
+		backgroundColor: '#3e8bff',
+	});
 
 
-// niceScroll || scrollbars resize
-$("body").getNiceScroll().resize();
+	var styles = [ 
+
+	{
+		"featureType": "road",
+		"stylers": [
+		{ "color": "#b4b4b4" }
+		]
+	},{
+		"featureType": "water",
+		"stylers": [
+		{ "color": "#d8d8d8" }
+		]
+	},{
+		"featureType": "landscape",
+		"stylers": [
+		{ "color": "#f1f1f1" }
+		]
+	},{
+		"elementType": "labels.text.fill",
+		"stylers": [
+		{ "color": "#000000" }
+		]
+	},{
+		"featureType": "poi",
+		"stylers": [
+		{ "color": "#d9d9d9" }
+		]
+	},{
+		"elementType": "labels.text",
+		"stylers": [
+		{ "saturation": 1 },
+		{ "weight": 0.1 },
+		{ "color": "#000000" }
+		]
+	}
+
+	];
+
+	map.addStyle({
+		styledMapName:"Styled Map",
+		styles: styles,
+		mapTypeId: "map_style"  
+	});
+
+	map.setStyle("map_style");
+}());
+
+
+
