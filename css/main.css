@@ -13,6 +13,31 @@ body {
 }
 
 
+.moving {
+width: 600x;
+height:20;
+ background-color:transparent;
+position:fixed;
+  font-size: 100px;  
+  font-weight: bold;
+}
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+
+
+/* flip open */
+
+
+
+  /*flip close */
+  .fcolor{
+    color: black;
+  }
+
 .btn {
   border-radius: 0;
   font-family: 'Yanone Kaffeesatz','sans-serif';
@@ -103,10 +128,11 @@ h2 {
 
 .navbar-brand {
   background-color: #1B7B98;
-  height: 300px;
+  height: 250px;
   margin-bottom: 20px;
   position: relative;
-  width: 300px;
+  width: 250px;
+  opacity: .9
 }
 
 .navbar-brand img {
@@ -453,6 +479,7 @@ h2 {
 
 #event-carousel {
   position: relative;
+
 }
 
 .even-control-left, 
@@ -490,6 +517,9 @@ h2 {
 
 .guitar2 img {
   padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 10%;
+
 }
 
 .about-content {
@@ -679,7 +709,11 @@ h2 {
   background-repeat:no-repeat;  
   position: relative;
 }
-
+.hovering:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .ear-piece {
   position: absolute;
   left: 5%;
