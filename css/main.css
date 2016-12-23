@@ -12,7 +12,9 @@ body {
   color: #fff
 }
 
-
+#red{
+  font-size: 27px;
+}
 .moving {
 width: 600x;
 height:20;
@@ -284,7 +286,7 @@ h2 {
   background-color: #C34C39;
   background-image: url(".http://placehold.it/1600x363");
   background-position: center bottom;
-  background-size: contain;
+  background-size: fill;
   background-repeat:no-repeat;
   position: relative;
   overflow: hidden;
@@ -413,15 +415,76 @@ h2 {
 }
 
  
+#team {
+  background-color: #1881a2;
+ /* background-image: url("../images/performar-bg.jpg"); */
+  background-size: fill;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+#team h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+
+.single-event {
+  margin-bottom: 70px;
+}
+.single-event img{
+  width: 75%;
+  height: 75%;
+}
+
+.single-event h4 {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+
+.single-event h5 {
+  font-size: 18px;
+  font-weight: 100;
+  display: block;
+}
+
+#team-carousel {
+  position: relative;
+
+}
+
+.even-control-left, 
+.even-control-right {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  top: 0;
+}
+
+.even-control-left {
+  right: 3%
+} 
+
+.even-control-right {
+  right: 0;
+}
 
  /*************************
 *******Event CSS******
 **************************/
 #event {
-  background-color: #3D3D3D;
+  background-color: #348990;
  /* background-image: url("../images/performar-bg.jpg"); */
   background-position: 50% 0;
-  background-size: contain;
+  background-size: fill;
   position: relative;
   background-repeat: no-repeat;
 }
@@ -502,10 +565,16 @@ h2 {
 /*************************
 *******About CSS**********
 **************************/
-
+.college{
+  width: 300px;
+}
+#size{
+  font-size: 30px;  
+}
 #about {
   background-color: #75B46E;  
-  position: relative;  
+  position: relative; 
+  background-size: fill; 
   width: 100%;
   display: flex;
 }
@@ -516,15 +585,14 @@ h2 {
 }
 
 .guitar2 img {
-  padding-top: 3%;
+  padding-top: 10%;
   padding-bottom: 3%;
   padding-left: 10%;
 
 }
 
 .about-content {
-  width: 50%;
-   /*background-image: url("../images/about-bg.jpg"); */
+  width: 100%;
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -701,8 +769,57 @@ h2 {
 ******Contact CSS****
 **************************/
 
+.contact-person {
+  background-color: #C34C39;
+  /*background-image: url("../images/logo.png");*/
+  background-position:center bottom;
+  background-size:contain;
+  background-repeat:no-repeat;  
+  position: relative;
+}
+#contact-person .col-sm-10 {
+  z-index: 10;
+}
+
+#contact-person h2 {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+#contact-person .item ul {
+  font-size: 0;
+  padding: 0;
+}
+
+
+#contact-person .item ul li {
+  display: inline-block;
+  list-style: none;
+  width: 33.33%;
+  margin-bottom: 75px;
+}
+
+#contact-person .item ul li:last-child {
+  margin-right: 0
+}
+
+.contact-person-control-left, 
+.contact-person-control-right {
+  color: #FFFFFF;
+  font-size: 24px;
+  position: absolute;
+  top: 20%;
+}
+
+.contact-person-control-left {
+  right: 12%
+}
+
+.contact-person-control-right {
+  right: 10%
+}
 .contact-section {
-  background-color: #f7ab24;
+  background-color: #F9AB00;
   /*background-image: url("../images/logo.png");*/
   background-position:60% 0;
   background-size:contain;
@@ -718,29 +835,31 @@ h2 {
   position: absolute;
   left: 5%;
   top: 20%;
+  
 }
 
 #contact .container {
   padding-top:47px;
 }
 
-#contact h3 {
+#contact h1 {
   text-transform:inherit;
   color: #373737; 
 }
 
-#contact-section h3 {  
+#contact-section h1 {  
   margin-bottom: 25px
 }
 
 #contact address {
-  font-size: 18px;  
+  font-size: 20px;  
   color: #373737; 
 }
 
 .contact-text {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   display: block;
+  font-size: 30px;
 }
 
 

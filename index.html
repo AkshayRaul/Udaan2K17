@@ -23,10 +23,9 @@
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.facebook.com/UdaanCultFest/"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						
+						<a href="https://twitter.com/udaan_sp?s=09"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/UdaanCultFest/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/udaan_sp/"><i class="fa fa-instagram"></i></a>
 					</div>
 				</div>     
 		        <div class="row">	        		
@@ -37,17 +36,17 @@
 		                    <span class="icon-bar"></span>
 		                    <span class="icon-bar"></span>
 		                </button>
-		                <a class="navbar-brand" href="index.html">
-		                	<img class="img-responsive" src="images/logo.png" alt="logo">
-		                </a>                    
+		                               
 		            </div>
 		              <div class="collapse navbar-collapse">
 		                <ul class="nav navbar-nav navbar-right">                 
-		                    <li class="scroll"><a href="../index.html#home">Home</a></li>
+		                    <li class="scroll active"><a href="../index.html#home">Home</a></li>
 		                    <li class="scroll"><a href="../index.html#explore">Explore</a></li>                         
-		                    <li class="scroll active"><a href="../index.html#event">Event</a></li>
+		                    <li class="scroll"><a href="../index.html#event">Event</a></li>
 		                    <li class="scroll"><a href="../index.html#about">About</a></li>                     
 		                    <li class="scroll"><a href="../index.html#contact">Contact</a></li> 
+		                    <li class="scroll"><a href="../index.html#team">Developers</a></li> 
+		                    <li id="gallery"><a href="../gallery/gallery.html">Gallery</a></li>
 
       
 		                </ul>
@@ -67,42 +66,30 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="images/slider/slider1.jpg" alt="slider">						
-					<div class="carousel-caption">
-						<h2></h2>
-						<h4></h4>
-						
-					</div>
+					<img class="img-responsive" src="http://placehold.it/1600x800" alt="slider">						
+					
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="http://placehold.it/1600x800" alt="slider">	
-					<div class="carousel-caption">
-						<h2> </h2>
-						<h4></h4>
-						
-					</div>
+					
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="http://placehold.it/1600x800" alt="slider">	
-					<div class="carousel-caption">
-						<h2> </h2>
-						<h4></h4>
-						<a href="#contact" ><i class="fa fa-angle-right"></i></a>
-					</div>
+					
 				</div>				
 			</div>
 		</div>    	
     </section>
 	<!--/#home-->
 
-	<section id="explore">
+	<section id="explore" style="background-image: url(images/event-bg.jpg);">
 		<div class="container">
 			<div class="row">
-				<div class="watch">
+				<div class="watch" style="padding-left:6%">
 					<img class="img-responsive" src="images/charlie.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>We are coming in </h2>
+					<h1 id = "red" style="font-size: 60px;">We are coming in </h1>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
@@ -129,35 +116,43 @@
 		</div>
 	</section><!--/#explore-->
 
-	<section id="event" >
+	<section id="event" style="background-image: url(images/performar-bg.jpg);">
 		<div class="container">
+
 			<div class="row">
+
 				<div class="col-sm-12 col-md-9">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">Events</h2>
-						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<h2 class="heading" style="font-size: 45px; font-weight: bold;">Events</h2>
+						
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="row">
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<a href="./performingarts/performingarts.html"><div class="single-event">
 											<img class="img-responsive" src="images/pamain.jpg" alt="event-image">
 											<h4>Performing Arts</h4>
 								
 										</div></a>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<a href="./literaryarts/literaryarts.html"><div class="single-event">
 											<img class="img-responsive" src="images/lamain.jpg" alt="event-image">
 											<h4>Literary Arts</h4>
 											
 										</div></a>
 									</div>
-									<div class="col-sm-4">
-										<a href="./techevents/index.html"><div class="single-event">
+									<div class="col-sm-3">
+										<a href="./finearts/finearts.html"><div class="single-event">
 											<img class="img-responsive" src="images/famain.jpg" alt="event-image">
 											<h4>Fine Arts</h4>
+											
+										</div></a>
+									</div>
+									<div class="col-sm-3">
+										<a href="./informals/informals.html"><div class="single-event">
+											<img class="img-responsive" src="images/inmain.jpg" alt="event-image">
+											<h4>Informals</h4>
 											
 										</div></a>
 									</div>
@@ -177,26 +172,25 @@
 		</div>
 	</section><!--/#event-->
 
-	<section id="about">
+	<section id="about" style="background-image: url(images/about-bg.jpg);">
 		<div class="guitar2 hovering">				
 			<img class="img-responsive" src="images/logomain.jpg" alt="guitar">
 		</div>
 		<div class="about-content">					
-					<h2>About Udaan</h2>
-					<p>UDAAN' being sought to provide invaluable support in facilitating the delivery of an extravaganza, in which a wide range of youth and youth service providers from educational sector will be showcasing their talent in this CULTURAL festival.</p>
-					<a href="#contact" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a>
-				
+					<h1 style="font-size: 45px; font-weight: bold;">About Udaan</h2>
+					<p id="size">UDAAN' being sought to provide invaluable support in facilitating the delivery of an extravaganza, in which a wide range of youth and youth service providers from educational sector will be showcasing their talent in this CULTURAL festival.</p>
+					<p id="size">16,17,18 February 2017</p>				
 		</div>
 	</section><!--/#about-->
 	
 
 	
-	<section id="sponsor">
+	<section id="sponsor" style="background-image: url(images/sponsor-bg.jpg);">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
-						<h2>Sponsors</h2>			
+						<h2 style="font-size: 45px; font-weight: bold;">Sponsors</h2>			
 						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
@@ -214,64 +208,172 @@
 								<ul>
 									<li><a href="#"><img height="55%" width="90%" class="img-responsive" src="images/sponsor/sponsor7.png" alt=""></a></li>
 									<li><a href="#"><img height="55%" width="90%" class="img-responsive" src="images/sponsor/sponsor8.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor9.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor10.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor11.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor12.png" alt=""></a></li>
+									
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>				
 			</div>
-			<div class="ironman" >
+			<div class="ironman">
 				<img class="img-responsive" height="100%" width="60%" src="images/Iron-Man.png" alt=""> 
 			</div>
 		</div>
 	</section><!--/#sponsor-->
 
 	<section id="contact" class="map1">
-		<div class="map">
-			<div id="gmap-wrap">
-	 			 <div style="width:100%;max-width:100%;overflow:hidden;height:440px;color:red;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sardar+Patel+Institute+of+Technology,+Munshi+Nagar,+Andheri+(West),+Mumbai+400+058&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div>				
-	 			</div>	 			
-	    	</div>
-		</div><!--/#map-->
-		<div class="contact-section">
+		<div class="contact-person" style="background-image: url(images/event-bg.jpg);padding-top:5%;padding-left:10%;padding-right:10%;padding-bottom:5%">
+
+			<div class="row" >
+        <div class="col-sm-12 col-md-12">
+            
+                <div class="row">
+                  <div class="col-sm-3">
+                    <div class="card" ><div style="background:#f0f0f0">
+  <img class="card-img-top" src="../images/vsm.jpg" alt="Card image cap" style="height:180px;margin-left:15%">
+  </div><div class="card-block" style="border:1px solid #DDDDDD;padding-left:2%;background:#FFBCBC; opacity:.8">
+    <h4 class="card-title" style="color:black;font-weight:bold">Manas Sardar</h4>
+    <p class="card-text" style="color:black">Secretary</p><p style="color:black;">Contact: 9757345108<br>Email-id: manassardar04@gmail.com</p>
+  </div>
+</div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card" ><div style="background:#f0f0f0">
+  <img class="card-img-top" src="../images/vsm.jpg" alt="Card image cap" style="height:180px;margin-left:15%">
+  </div><div class="card-block" style="border:1px solid #DDDDDD;padding-left:2%;background:#FFBCBC; opacity:.8 ">
+    <h4 class="card-title" style="color:black;font-weight:bold">Ayesha Kazi</h4>
+    <p class="card-text" style="color:black">Chair Person</p><p style="color:black;">Contact: 9820471712<br>Email-id: ayeshakazi1612@gmail.com</p>
+  </div>
+</div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card" ><div style="background:#f0f0f0">
+  <img class="card-img-top" src="../images/vsm.jpg" alt="Card image cap" style="height:180px;margin-left:15%">
+  </div><div class="card-block" style="border:1px solid #DDDDDD;padding-left:2%;background:#FFBCBC; opacity:.8">
+    <h4 class="card-title" style="color:black;font-weight:bold">Parimal Gosavi</h4>
+    <p class="card-text" style="color:black">Cultural Secretary</p><p style="color:black;">Contact: 7387642458<br>Email-id: parimalgosavi@gmail.com</p>
+  </div>
+</div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card" ><div style="background:#f0f0f0">
+  <img class="card-img-top" src="../images/vsm.jpg" alt="Card image cap" style="height:180px;margin-left:15%">
+  </div><div class="card-block" style="border:1px solid #DDDDDD;padding-left:2%;background:#FFBCBC; opacity:.8">
+    <h4 class="card-title" style="color:black;font-weight:bold">Kethki Randhir</h4>
+    <p class="card-text" style="color:black">Cultural Secretary</p><p style="color:black;">Contact: 9665860213<br>Email-id: ketki.randhir@gmail.com</p>
+  </div>
+</div>
+                  </div>
+                  
+               </div>
+            
+          </div>
+		</div>	
+	</div>
+		<div class="contact-section" style="padding-bottom:5%; background-image: url(images/contact-bg.jpg);">
+
 			<div class="ear-piece">
-				<img height="30%" width="30%" class="img-responsive" src="images/superman.png" alt=""> 
+				<img height="40%" width="40%" class="img-responsive" src="images/superman.png" alt=""> 
 			</div>
 			<div class="container">
+
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-4">
 						<div class="contact-text">
-							<h3>Contact</h3>
-							<address>
-								E-mail: promo@party.com<br>
-								Phone: +1 (123) 456 7890<br>
-								Fax: +1 (123) 456 7891
-							</address>
-						</div>
-						<div class="contact-address">
-							<h3>Contact</h3>
-							<address>
-								Bharatiya Vidya Bhavans Sardar Patel Institute of Technology Munshi Nagar,<br> Andheri (West),<br> Mumbai 400 058<br>
+							<h1 style="font-size: 40px; font-weight: bold;">Address</h1>
+							<address style="font-size: 35px;">
+								Bharatiya Vidya Bhavans Sardar Patel Institute of Technology, Munshi Nagar,<br> Andheri (West),<br> Mumbai 400 058<br>
 								
-							</address>
+							</address>						</div>
+						<div class="contact-address">
+							
+
 						</div>
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section" class="hovering">
-							<h3>Sardar Patel Institute of Technology</h3>
-					    	<img class="img-responsive " src="images/college.jpg" alt="">
+							<h1 style="font-weight: bold; ">Sardar Patel Institute of Technology</h1>
+					    	<img class="img-responsive college" src="images/college.jpg" alt="College" style="padding-left: 10%;"><br>
 
 					    </div>
 					</div>
 				</div>
 			</div>
 		</div>		
+
+		<div class="map">
+			<div id="gmap-wrap">
+	 			 <div style="width:100%;max-width:100%;overflow:hidden;height:440px;color:red;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Sardar+Patel+Institute+of+Technology,+Munshi+Nagar,+Andheri+(West),+Mumbai+400+058&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div>				
+	 			</div>	 			
+	    	</div>
+		</div><!--/#map-->
+	
 	</section>
     <!--/#contact-->
+
+    <section id="team" style="padding-right:0; background-image: url(images/developers-bg.jpg); width: 100%">
+    <div class="container" style="padding-left: 10%;">
+      <div class="row" style="width:75%">
+        <div class="col-sm-12 col-md-9 ">
+
+    <section id="team" style="padding-right:0; background-image: url(images/developers-bg.jpg);">
+    <div class="container" style="padding-left:17%">
+      <div class="row" >
+        <div class="col-sm-12 col-md-9">
+            <h2 class="heading" style="text-align: center; font-size: 45px; font-weight: bold;">Website Developers</h2>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="single-event">
+                      <img class="img-responsive" src="images/funevent.png" alt="event-image">
+                      <h4 style="padding-left: 15%;">Karan Bheda</h4>
+                
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="single-event">
+                      <img class="img-responsive" src="images/megaevent.png" alt="event-image">
+                      <h4 style="padding-left: 15%;">Atharva Patil</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="single-event">
+                      <img class="img-responsive" src="images/techevent.jpg" alt="event-image">
+                      <h4 style="padding-left: 15%;">Akshay Raul</h4>
+                      
+                    </div>
+                  </div>
+                  
+               </div> 
+               <h2 class="heading" style="text-align:center;margin-top:0px; font-size:45px; font-weight: bold;">Sub-Commitee</h2>
+               <div class="row" style="margin-left:17%;margin-right:17%; ">
+                <div class="col-sm-6">
+                  <div class="single-event">
+                      <img class="img-responsive" src="images/funevent.png" alt="event-image">
+                      <h4 style="padding-left: 10%;">Saral Uttamani</h4>
+                
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="single-event">
+                      <img class="img-responsive" src="images/funevent.png" alt="event-image">
+                      <h4 style="padding-left: 10%;">Akshita Ganatra</h4>
+                
+                    </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <!--div class="guitar">
+          <img class="img-responsive" src="../images/batman-trans.png" alt="guitar">
+        </div-->
+        <!--div class="joker">
+          <img class="img-responsive" src="../images/joker.jpg" alt="guitar">
+        </div-->
+      </div>      
+    </div>
+  </section><!--/#event-->
 
     <footer id="footer">
         <div class="container">
@@ -302,6 +404,11 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map1').on('click', onMapClickHandler);
+  	</script>
+  	<script type="text/javascript">
+  		document.getElementById("gallery").onclick = function () {
+    location.href = "gallery/gallery.html";
+};
   	</script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
